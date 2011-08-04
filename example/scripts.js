@@ -4,6 +4,8 @@ function ehakFilterCities(countiesObj, citiesSelectId){
 	var citiesObj = document.getElementById(citiesSelectId);
 	
 	citiesObj.options.length = 0;
+	citiesObj.options[citiesObj.options.length] = new Option('-', '', false, false);
+	
 	for (var i in cities) {
 		if(cities[i].parentId == selectedCountyId){
 			citiesObj.options[citiesObj.options.length] = new Option(cities[i].label, cities[i].id, false, false);
