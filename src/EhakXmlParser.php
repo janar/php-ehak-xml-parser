@@ -21,7 +21,7 @@ class EhakXmlParser {
 	/**
 	 * Return all counties found in xml
 	 * 
-   * @param Boolean $useIdAsKey Use county ID as key id true
+	 * @param Boolean $useIdAsKey Use county ID as key id true
 	 * @return array
 	 */
 	public function getCounties($useIdAsKey = false){
@@ -55,7 +55,7 @@ class EhakXmlParser {
 	 * Return all rural municipalities and cities found in xml
 	 * Also adds parent county ID
 	 * 
-   * @param Boolean $useIdAsKey Use county ID as key id true
+	 * @param Boolean $useIdAsKey Use county ID as key id true
 	 * @return array
 	 */
 	public function getCitiesAndMunicipalities($useIdAsKey = false){
@@ -99,7 +99,7 @@ class EhakXmlParser {
 	
 	/**
 	 * Create SimpleXMLElement from given string
-	 * Return tru on success
+	 * Return true on success
 	 * 
 	 * @return boolean
 	 */
