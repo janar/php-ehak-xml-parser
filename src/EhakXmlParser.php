@@ -72,7 +72,7 @@ class EhakXmlParser {
 				
 				//is it city or rural municipality?
 				$test = (string) $xmlItem->Label->LabelText;
-				$type = substr($test, -8) == ': cities' ? 'city' : 'municipality';
+				$type = (substr($test, -8) == ': cities' || substr($test, -8) == ': linnad') ? 'city' : 'municipality';
 				
 				foreach($xmlItem->Item as $k3 => $xmlCity){
 					
@@ -81,7 +81,7 @@ class EhakXmlParser {
 					$city->parentCountyId = $currentCountyId;
 					$city->type = $type;
 					$city->originalLabel = (string) $xmlCity->Label->LabelText;
-					$city->shortLabel = str_replace(array(' rural municipality', ' city'), '', $city->originalLabel);
+					$city->shortLabel = trim(str_replace(array(' rural municipality', ' city', 'linn', 'vald'), '', $city->originalLabel));
 					
 					if($useIdAsKey){
 						$citiesAndMunicipalities[$city->id] = $city;
