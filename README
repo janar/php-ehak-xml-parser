@@ -4,7 +4,7 @@ It currently parses only counties, cities and rural municipalities into array. N
 What it parses can be seen here too http://et.wikipedia.org/wiki/Eesti_haldusjaotus. 
 
 Blog post about this class can be found http://eagerfish.eu/estonian-ehak-xml-parser-written-in-php/
-Working example can be found here http://eagerfish.eu/projects/EhakXmlParser/example/
+Working example can be found here http://eagerfish.eu/projects/php-ehak-xml-parser/examples/javascript-filtering-example/
 
 Keep in mind: 
 * Use it however you want.
@@ -14,8 +14,8 @@ Keep in mind:
 To get example working you need to add xml file into "input-xml" folder. 
 Grab it from http://metaweb.stat.ee/ (direct link to current version http://metaweb.stat.ee/get_classificator_file.htm?id=2999171&siteLanguage=en_US)
 
-After getting XML file find fallowing string from "example/index.php": 
-$inputXmlPath = '../input-xml/EHAK2011v1_en.xml';
+After getting XML file find fallowing string from "examples/javascript-filtering-example/index.php": 
+$inputXmlPath = '../../input-xml/EHAK2011v1_en.xml';
 Change location of the file if needed to fit downloaded xml filename.
 
 After that it should work. 
