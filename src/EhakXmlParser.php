@@ -7,8 +7,9 @@
  * Use it however you want. 
  * Use at your own risk. No warranties are offered. 
  * 
+ * @version 1.0.1
  * @author Janar Jürisson <janar@eagerfish.eu>
- * @version 1.0
+ * @link http://eagerfish.eu/projects/EhakXmlParser/example/
  */
 
 class EhakXmlParser {
