@@ -10,6 +10,7 @@ Keep in mind:
 * Use it however you want.
 * Use at your own risk. No warranties are offered. 
 * This is version 1.0.1
+* It uses PHP component SimpleXMLElement 
 
 To get example working you need to add xml file into "input-xml" folder. 
 Grab it from http://metaweb.stat.ee/ (direct link to current version http://metaweb.stat.ee/get_classificator_file.htm?id=2999171&siteLanguage=en_US)
