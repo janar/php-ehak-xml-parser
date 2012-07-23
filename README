@@ -1,6 +1,7 @@
 This is PHP class for parsing Classification of Estonian administrative units and settlements xml
 provided by http://metaweb.stat.ee/
-It currently parses only counties, cities and rural municipalities into array. No villages and small towns. 
+It currently parses counties, cities and rural municipalities into array. Also villages, small towns and cityparts.
+It should cover everything (I hope). In example you can see usual 3 level implementation of this script.
 What it parses can be seen here too http://et.wikipedia.org/wiki/Eesti_haldusjaotus. 
 
 Blog post about this class can be found http://eagerfish.eu/estonian-ehak-xml-parser-written-in-php/
@@ -9,10 +10,11 @@ Working example can be found here http://eagerfish.eu/projects/php-ehak-xml-pars
 Keep in mind: 
 * Use it however you want.
 * Use at your own risk. No warranties are offered. 
-* This is version 1.0.1
+* This is version 1.0.2
 * It uses PHP component SimpleXMLElement 
 
-To get example working you need to add xml file into "input-xml" folder. 
+To get example working you need to add xml file into "input-xml" folder.
+Choose whichever language you want to use. It supports both. 
 Grab it from http://metaweb.stat.ee/ (direct link to current version http://metaweb.stat.ee/get_classificator_file.htm?id=2999171&siteLanguage=en_US)
 
 After getting XML file find fallowing string from "examples/javascript-filtering-example/index.php": 
